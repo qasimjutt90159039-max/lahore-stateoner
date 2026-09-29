@@ -102,10 +102,11 @@ class Storage {
     // 2. Products (Seed all 151 products)
     const seedProds = getAllSeedProducts();
     const storedProds = readJSON<Product[]>('products.json', []);
-    if (!storedProds || storedProds.length < 130) {
+    const hasOldImages = storedProds.length > 0 && storedProds[0]?.thumbnail?.includes('w=700');
+    if (!storedProds || storedProds.length < 130 || hasOldImages) {
       this.products = seedProds;
       writeJSON('products.json', this.products);
-      console.log(`[Storage] Seeded ${this.products.length} stationery products.`);
+      console.log(`[Storage] Seeded ${this.products.length} stationery products with realistic images.`);
     } else {
       this.products = storedProds;
     }

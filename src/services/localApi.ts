@@ -119,6 +119,14 @@ class LocalApiService {
 
   private init() {
     const seed = getAllSeedProducts();
+    // Invalidate old cache so visitors immediately see new realistic images
+    try {
+      if (typeof window !== 'undefined' && localStorage.getItem('lsm_products_v3') !== 'true') {
+        localStorage.removeItem('lsm_products');
+        localStorage.setItem('lsm_products_v3', 'true');
+      }
+    } catch {}
+
     const stored = getLocal<Product[]>('products', []);
     if (!stored || stored.length < 130) {
       this.products = seed;
