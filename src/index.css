@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Stationery Paper Pattern Effects */
+.bg-notebook-lines {
+  background-color: #FFFDF5;
+  background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 100% 28px;
+}
+
+.bg-grid-paper {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(23, 63, 95, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 63, 95, 0.05) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(23, 63, 95, 0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.stationery-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(23, 63, 95, 0.04), 0 1px 2px rgba(23, 63, 95, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.stationery-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 20px -5px rgba(23, 63, 95, 0.08), 0 4px 6px -2px rgba(23, 63, 95, 0.04);
+}
+
+.sticky-note-badge {
+  background: #FFF9DB;
+  border-left: 3px solid #F6C85F;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

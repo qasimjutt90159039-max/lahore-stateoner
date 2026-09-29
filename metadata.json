@@ -1,0 +1,7 @@
+{
+  "name": "Lahore Stationers Mall - Wholesale & Retail Stationery",
+  "description": "Urdu Bazar Lahore wholesale and retail stationery marketplace. Browse 140+ quality school, office, art, and paper supplies with bulk quotation and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
