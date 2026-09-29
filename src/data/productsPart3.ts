@@ -1,0 +1,436 @@
+export const productsPart3 = [
+  // 4. Paper Products (12 products: items 48-59)
+  {
+    id: 'lsm-048', name: 'A4 Copy Paper 70 GSM', slug: 'a4-copy-paper-70-gsm', sku: 'LSM-PAP-A470-048',
+    category: 'Paper Products', subcategory: 'Copier Paper', brand: 'Double A',
+    price: 1350, wholesalePrice: 1180, compareAtPrice: 1500, unit: 'Ream', packSize: '500 Sheets Ream', minWholesaleQty: 5,
+    stock: 1200, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 88,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['a4 paper', '70 gsm', 'photocopy paper', 'urdu bazar ream'],
+    desc: 'High brightness 70 GSM multipurpose printing and photocopying paper. Jam-free feed for high-speed laser and inkjet printers.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Sheets': '500 Sheets/Ream', 'Weight': '70 GSM', 'Whiteness': '102% CIE', 'Size': 'A4' }
+  },
+  {
+    id: 'lsm-049', name: 'A4 Copy Paper 80 GSM', slug: 'a4-copy-paper-80-gsm', sku: 'LSM-PAP-A480-049',
+    category: 'Paper Products', subcategory: 'Copier Paper', brand: 'Double A',
+    price: 1550, wholesalePrice: 1360, compareAtPrice: 1750, unit: 'Ream', packSize: '500 Sheets Ream', minWholesaleQty: 5,
+    stock: 1500, stockStatus: 'in_stock' as const, rating: 5.0, reviewsCount: 112,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['80 gsm', 'double a', 'executive print', 'heavy paper'],
+    desc: 'Premium ultra-smooth 80 GSM paper for presentations, legal contracts, double-sided color printing without show-through.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Sheets': '500 Sheets', 'Weight': '80 GSM Extra Heavy', 'Whiteness': '106% CIE' }
+  },
+  {
+    id: 'lsm-050', name: 'A4 Colored Paper', slug: 'a4-colored-paper', sku: 'LSM-PAP-COL-050',
+    category: 'Paper Products', subcategory: 'Craft Paper', brand: 'Generic',
+    price: 450, wholesalePrice: 360, compareAtPrice: 520, unit: 'Pack', packSize: '100 Sheets Pack', minWholesaleQty: 10,
+    stock: 620, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 27,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['colored paper', 'origami', 'pastel sheets'],
+    desc: 'Assorted pastel and neon colored A4 paper pack. Includes 5 bright colors for school notices, flyers, and paper crafts.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Pack Count': '100 Sheets', 'Colors': 'Yellow, Pink, Green, Blue, Orange', 'Weight': '75 GSM' }
+  },
+  {
+    id: 'lsm-051', name: 'A4 Glossy Paper', slug: 'a4-glossy-paper', sku: 'LSM-PAP-GLS-051',
+    category: 'Paper Products', subcategory: 'Photo Paper', brand: 'Kodak Tech',
+    price: 650, wholesalePrice: 520, compareAtPrice: 750, unit: 'Pack', packSize: '50 Sheets Pack', minWholesaleQty: 10,
+    stock: 400, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 34,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['glossy paper', 'inkjet photo', 'high gloss'],
+    desc: 'High-gloss cast-coated A4 photo paper. Delivers vivid colors, sharp photographic contrast and quick-dry smudge proof prints.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Weight': '180 GSM', 'Finish': 'Cast-Coated Glossy', 'Sheets': '50 Sheets' }
+  },
+  {
+    id: 'lsm-052', name: 'A4 Photo Paper', slug: 'a4-photo-paper', sku: 'LSM-PAP-PHT-052',
+    category: 'Paper Products', subcategory: 'Photo Paper', brand: 'Kodak Tech',
+    price: 850, wholesalePrice: 690, compareAtPrice: 980, unit: 'Pack', packSize: '50 Sheets Pack', minWholesaleQty: 8,
+    stock: 350, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 40,
+    featured: true, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['photo paper', 'premium 230gsm', 'studio prints'],
+    desc: 'Studio grade 230 GSM resin-coated photo paper for professional portrait photography and certificate printing.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Weight': '230 GSM', 'Waterproof': 'Yes Resin Coated' }
+  },
+  {
+    id: 'lsm-053', name: 'A4 Card Sheet', slug: 'a4-card-sheet', sku: 'LSM-PAP-CRD-053',
+    category: 'Paper Products', subcategory: 'Cardstock', brand: 'LSM Master',
+    price: 550, wholesalePrice: 430, compareAtPrice: 650, unit: 'Pack', packSize: '50 Sheets Pack', minWholesaleQty: 10,
+    stock: 580, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 29,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['card sheet', 'cardstock', 'title covers', 'binding sheet'],
+    desc: 'Heavy 250 GSM bristol card sheets suitable for business card prototypes, report covers, invitations and packaging mockups.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Weight': '250 GSM Heavy Bristol', 'Sheets': '50 Sheets' }
+  },
+  {
+    id: 'lsm-054', name: 'Legal Size Paper', slug: 'legal-size-paper', sku: 'LSM-PAP-LEG-054',
+    category: 'Paper Products', subcategory: 'Office Paper', brand: 'Double A',
+    price: 1650, wholesalePrice: 1450, compareAtPrice: 1850, unit: 'Ream', packSize: '500 Sheets Ream', minWholesaleQty: 5,
+    stock: 750, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 60,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['legal paper', 'affidavit paper', 'court paper', 'pakistan legal'],
+    desc: 'Legal size (8.5 x 14 inch) 75 GSM paper used extensively across Lahore High Court, district courts, and lawyer chambers.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Size': 'Legal 8.5 x 14 in (216 x 356 mm)', 'Sheets': '500 Sheets' }
+  },
+  {
+    id: 'lsm-055', name: 'Letter Size Paper', slug: 'letter-size-paper', sku: 'LSM-PAP-LTR-055',
+    category: 'Paper Products', subcategory: 'Office Paper', brand: 'Double A',
+    price: 1350, wholesalePrice: 1190, compareAtPrice: 1500, unit: 'Ream', packSize: '500 Sheets Ream', minWholesaleQty: 5,
+    stock: 550, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 22,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['letter size', 'american paper', '8.5x11'],
+    desc: 'US Letter size paper ream (8.5 x 11 inch) for multinational documentation, overseas visas, and embassy correspondence.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Size': '8.5 x 11 inches', 'Weight': '75 GSM' }
+  },
+  {
+    id: 'lsm-056', name: 'Construction Paper', slug: 'construction-paper', sku: 'LSM-PAP-CNS-056',
+    category: 'Paper Products', subcategory: 'Craft Paper', brand: 'Generic',
+    price: 380, wholesalePrice: 295, compareAtPrice: 440, unit: 'Pack', packSize: '50 Sheets Pack', minWholesaleQty: 15,
+    stock: 480, stockStatus: 'in_stock' as const, rating: 4.6, reviewsCount: 19,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['construction paper', 'kindergarten', 'crafts'],
+    desc: 'Heavy textured multi-colored construction paper for school collages, models, posters, and seasonal classroom decorations.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Sheet Count': '50 Assorted', 'Weight': '110 GSM' }
+  },
+  {
+    id: 'lsm-057', name: 'Craft Paper', slug: 'craft-paper', sku: 'LSM-PAP-CRF-057',
+    category: 'Paper Products', subcategory: 'Craft Paper', brand: 'LSM Master',
+    price: 480, wholesalePrice: 380, compareAtPrice: 560, unit: 'Roll', packSize: '10 Meter Roll', minWholesaleQty: 10,
+    stock: 390, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 26,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['brown kraft paper', 'wrapping paper', 'vintage paper'],
+    desc: 'Natural brown kraft paper roll for eco-friendly gift wrapping, parcel packing, book covering and art backings.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Length': '10 Meters x 30 Inches', 'Type': 'Recycled Virgin Kraft' }
+  },
+  {
+    id: 'lsm-058', name: 'Carbon Paper', slug: 'carbon-paper', sku: 'LSM-PAP-CRB-058',
+    category: 'Paper Products', subcategory: 'Office Paper', brand: 'Pelikan',
+    price: 490, wholesalePrice: 395, compareAtPrice: 580, unit: 'Box', packSize: '100 Sheets Box', minWholesaleQty: 10,
+    stock: 520, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 31,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['carbon paper', 'invoice copy', 'blue carbon'],
+    desc: 'Smudge-free blue typewriter and handwriting carbon paper. Produces crisp duplicates on ledger books and receipts.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Color': 'Blue', 'Quantity': '100 Sheets in Folded Box', 'Size': 'A4' }
+  },
+  {
+    id: 'lsm-059', name: 'Tracing Paper', slug: 'tracing-paper', sku: 'LSM-PAP-TRC-059',
+    category: 'Paper Products', subcategory: 'Drafting Paper', brand: 'Gateway Style',
+    price: 720, wholesalePrice: 580, compareAtPrice: 840, unit: 'Pack', packSize: '50 Sheets Pack', minWholesaleQty: 10,
+    stock: 310, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 33,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['tracing paper', 'translucent sheet', 'architect drafting'],
+    desc: 'High translucency 90 GSM natural tracing paper with high tear resistance. Optimal for CAD overlays and calligraphy practice.',
+    img: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Translucency': 'High Transparency', 'Weight': '90 GSM' }
+  },
+
+  // 5. Files & Folders (15 products: items 60-74)
+  {
+    id: 'lsm-060', name: 'A4 Document Folder', slug: 'a4-document-folder', sku: 'LSM-FIL-A4D-060',
+    category: 'Files & Folders', subcategory: 'Plastic Folders', brand: 'LSM Master',
+    price: 65, wholesalePrice: 48, compareAtPrice: 80, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 50,
+    stock: 2400, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 42,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['document folder', 'l-folder', 'clear folder'],
+    desc: 'L-shaped open top and side polypropylene clear document folder for quick paper insertion and scratch prevention.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Material': 'PP Transparent 0.18mm', 'Capacity': '30 Sheets' }
+  },
+  {
+    id: 'lsm-061', name: 'Plastic File Folder', slug: 'plastic-file-folder', sku: 'LSM-FIL-PLF-061',
+    category: 'Files & Folders', subcategory: 'Plastic Folders', brand: 'LSM Master',
+    price: 110, wholesalePrice: 82, compareAtPrice: 135, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 30,
+    stock: 1400, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 28,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['plastic file', 'slide binder', 'report cover'],
+    desc: 'Semi-rigid colored plastic report folder with sliding clip spine bar. Keeps reports neatly clamped without hole punching.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Spine': '10mm Sliding bar', 'Capacity': '50 sheets' }
+  },
+  {
+    id: 'lsm-062', name: 'Ring Binder', slug: 'ring-binder', sku: 'LSM-FIL-RGB-062',
+    category: 'Files & Folders', subcategory: 'Ring Binders', brand: 'LSM Master',
+    price: 340, wholesalePrice: 270, compareAtPrice: 400, unit: 'Piece', packSize: 'Single Piece', minWholesaleQty: 20,
+    stock: 900, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 39,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['ring binder', '2 ring file', 'office filing'],
+    desc: 'Durable 2-ring D-ring binder with spine label pocket and internal finger pull ring. Perfect for office document archives.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Ring Size': '2-D Ring 25mm', 'Capacity': '200 Sheets' }
+  },
+  {
+    id: 'lsm-063', name: 'Lever Arch File', slug: 'lever-arch-file', sku: 'LSM-FIL-LAF-063',
+    category: 'Files & Folders', subcategory: 'Arch Files', brand: 'LSM Master',
+    price: 450, wholesalePrice: 360, compareAtPrice: 540, unit: 'Piece', packSize: 'Carton of 10', minWholesaleQty: 10,
+    stock: 1200, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 71,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['lever arch file', 'office archive file', 'urdu bazar wholesale file'],
+    desc: 'Heavy-duty 75mm wide lever arch filing system with nickel-plated arch mechanism, compressor bar and metal shoe corner guards.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Spine Width': '75mm', 'Capacity': '500 Sheets', 'Corners': 'Metal reinforced' }
+  },
+  {
+    id: 'lsm-064', name: 'Box File', slug: 'box-file', sku: 'LSM-FIL-BXF-064',
+    category: 'Files & Folders', subcategory: 'Box Files', brand: 'LSM Master',
+    price: 390, wholesalePrice: 310, compareAtPrice: 470, unit: 'Piece', packSize: 'Carton of 10', minWholesaleQty: 10,
+    stock: 1600, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 65,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['box file', 'urdu bazar file', 'storage box file'],
+    desc: 'Traditional hardboard box file covered with marbled paper, internal spring paper clip and cloth spine hinge for extreme longevity.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Core': '2.5mm Thick Hardboard', 'Lock': 'Push catch spring clip' }
+  },
+  {
+    id: 'lsm-065', name: 'Clip File', slug: 'clip-file', sku: 'LSM-FIL-CLP-065',
+    category: 'Files & Folders', subcategory: 'Clip Files', brand: 'LSM Master',
+    price: 130, wholesalePrice: 98, compareAtPrice: 160, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 25,
+    stock: 980, stockStatus: 'in_stock' as const, rating: 4.6, reviewsCount: 24,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['clip file', 'swing clip', 'clamp file'],
+    desc: 'Side clamp spring steel clip file for papers that cannot be punched. Heavy gauge PVC outer cover.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Clamp': 'Heavy gauge spring steel', 'Punching Required': 'No' }
+  },
+  {
+    id: 'lsm-066', name: 'Button File', slug: 'button-file', sku: 'LSM-FIL-BTN-066',
+    category: 'Files & Folders', subcategory: 'Envelope Files', brand: 'LSM Master',
+    price: 85, wholesalePrice: 62, compareAtPrice: 105, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 2200, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 38,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['button folder', 'snap button', 'envelope file'],
+    desc: 'Polypropylene envelope style file with secure press-snap button closure and expandable gusset for certificates.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Closure': 'Press button snap', 'Gusset Expansion': '20mm' }
+  },
+  {
+    id: 'lsm-067', name: 'Expanding File', slug: 'expanding-file', sku: 'LSM-FIL-EXP-067',
+    category: 'Files & Folders', subcategory: 'Organizers', brand: 'LSM Master',
+    price: 680, wholesalePrice: 540, compareAtPrice: 820, unit: 'Piece', packSize: 'Single Piece', minWholesaleQty: 8,
+    stock: 350, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 31,
+    featured: true, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['expanding file', '12 pockets', 'accordion file'],
+    desc: '12-pocket accordion expanding organizer file with color-coded index insert tabs and elastic loop latch.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Pockets': '12 Tabbed Pockets', 'Monthly/Alphabetical Tabs': 'Included' }
+  },
+  {
+    id: 'lsm-068', name: 'Display File', slug: 'display-file', sku: 'LSM-FIL-DSP-068',
+    category: 'Files & Folders', subcategory: 'Display Books', brand: 'LSM Master',
+    price: 290, wholesalePrice: 225, compareAtPrice: 350, unit: 'Piece', packSize: 'Single Piece', minWholesaleQty: 15,
+    stock: 750, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 33,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['display book', 'clear pockets', 'presentation file', 'portfolio'],
+    desc: 'Clear view display presentation book featuring 40 anti-glare crystal transparent bound sheet protector pockets.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Pockets': '40 Bound Clear Sleeves', 'Non-glare': 'Yes' }
+  },
+  {
+    id: 'lsm-069', name: 'Transparent Folder', slug: 'transparent-folder', sku: 'LSM-FIL-TRN-069',
+    category: 'Files & Folders', subcategory: 'Plastic Folders', brand: 'Generic',
+    price: 50, wholesalePrice: 35, compareAtPrice: 65, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 50,
+    stock: 2500, stockStatus: 'in_stock' as const, rating: 4.6, reviewsCount: 27,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['transparent folder', 'clear sleeve', 'cheap file'],
+    desc: 'Standard clear plastic portfolio cover with thumb notch for convenient document retrieval.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Material': 'Clear Polypropylene', 'Pack': '10 pieces' }
+  },
+  {
+    id: 'lsm-070', name: 'Office Folder', slug: 'office-folder', sku: 'LSM-FIL-OFC-070',
+    category: 'Files & Folders', subcategory: 'Office Folders', brand: 'Bahadur',
+    price: 75, wholesalePrice: 55, compareAtPrice: 95, unit: 'Piece', packSize: 'Pack of 20', minWholesaleQty: 40,
+    stock: 1900, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 40,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['office folder', 'manila file', 'dak file'],
+    desc: 'Heavyweight manila card office folder with dual internal prong strip for secure document collation.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Material': '350 GSM Glazed Manila Card', 'Prongs': 'Twin flexible metal' }
+  },
+  {
+    id: 'lsm-071', name: 'Presentation Folder', slug: 'presentation-folder', sku: 'LSM-FIL-PRS-071',
+    category: 'Files & Folders', subcategory: 'Presentation', brand: 'LSM Master',
+    price: 180, wholesalePrice: 140, compareAtPrice: 220, unit: 'Piece', packSize: 'Pack of 5', minWholesaleQty: 20,
+    stock: 620, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 22,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['presentation folder', 'conference file', 'executive'],
+    desc: 'Twin pocket presentation folder with die-cut business card slot and embossed border trim.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Pockets': 'Dual internal 4-inch deep pockets', 'Card Slot': 'Included' }
+  },
+  {
+    id: 'lsm-072', name: 'Document Wallet', slug: 'document-wallet', sku: 'LSM-FIL-WLT-072',
+    category: 'Files & Folders', subcategory: 'Wallets', brand: 'LSM Master',
+    price: 160, wholesalePrice: 120, compareAtPrice: 200, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 25,
+    stock: 840, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 19,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['document wallet', 'cloth flap file', 'urdu bazar'],
+    desc: 'Cloth lined manila document wallet with full overlapping flap and cloth tie cord for high volume office records.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Closure': 'Stitched fabric ribbon tie', 'Capacity': '250 sheets' }
+  },
+  {
+    id: 'lsm-073', name: 'Project File', slug: 'project-file', sku: 'LSM-FIL-PRJ-073',
+    category: 'Files & Folders', subcategory: 'School Files', brand: 'Bahadur',
+    price: 90, wholesalePrice: 68, compareAtPrice: 110, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 30,
+    stock: 1400, stockStatus: 'in_stock' as const, rating: 4.6, reviewsCount: 31,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['project file', 'student report file', 'clear cover'],
+    desc: 'School project submission folder with frosted transparent front cover and colored opaque back.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Front': 'Clear PVC', 'Back': 'Solid Navy/Green/Maroon' }
+  },
+  {
+    id: 'lsm-074', name: 'School File', slug: 'school-file', sku: 'LSM-FIL-SCH-074',
+    category: 'Files & Folders', subcategory: 'School Files', brand: 'Bahadur',
+    price: 80, wholesalePrice: 58, compareAtPrice: 100, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 40,
+    stock: 1800, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 35,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['school file', 'test file', 'urdu bazar school'],
+    desc: 'Printed school assignment filing folder with student credentials header (Name, Roll No, Class, Subject).',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Header': 'Printed Name & Roll details', 'Card': 'Glazed duplex board' }
+  },
+
+  // 6. Markers & Highlighters (12 products: items 75-86)
+  {
+    id: 'lsm-075', name: 'Faber-Castell Highlighter', slug: 'faber-castell-highlighter', sku: 'LSM-MKR-FCH-075',
+    category: 'Markers & Highlighters', subcategory: 'Highlighters', brand: 'Faber-Castell',
+    price: 140, wholesalePrice: 110, compareAtPrice: 170, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 20,
+    stock: 1200, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 54,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['faber castell highlighter', 'neon yellow', 'study marker'],
+    desc: 'Superfluorescent Faber-Castell textliner with chisel tip for 3 line widths (1mm, 2mm, 5mm). Water-based universal ink.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tip': 'Chisel 1-5mm', 'Ink': 'Water-based neon', 'Colors': 'Yellow/Green/Pink' }
+  },
+  {
+    id: 'lsm-076', name: 'Dollar Highlighter', slug: 'dollar-highlighter', sku: 'LSM-MKR-DOL-076',
+    category: 'Markers & Highlighters', subcategory: 'Highlighters', brand: 'Dollar',
+    price: 70, wholesalePrice: 52, compareAtPrice: 90, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 30,
+    stock: 2100, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 42,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['dollar highlighter', 'cheap highlighter', 'urdu bazar'],
+    desc: 'Budget-friendly luminous Dollar highlighter pen for everyday school revision and document highlighting.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tip': 'Polyester chisel', 'Ink': 'Fluorescent' }
+  },
+  {
+    id: 'lsm-077', name: 'Textliner Highlighter', slug: 'textliner-highlighter', sku: 'LSM-MKR-TXT-077',
+    category: 'Markers & Highlighters', subcategory: 'Highlighters', brand: 'Faber-Castell',
+    price: 490, wholesalePrice: 395, compareAtPrice: 580, unit: 'Set', packSize: 'Set of 4 Colors', minWholesaleQty: 15,
+    stock: 580, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 46,
+    featured: true, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['textliner 48', '4 colors', 'faber set'],
+    desc: 'Pack of 4 Textliner highlighters in Yellow, Green, Pink, and Orange. Smudge-proof on standard copy paper.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Set Contents': '4 Neon Colors', 'Model': 'Textliner 48' }
+  },
+  {
+    id: 'lsm-078', name: 'Permanent Marker Black', slug: 'permanent-marker-black', sku: 'LSM-MKR-PMB-078',
+    category: 'Markers & Highlighters', subcategory: 'Permanent Markers', brand: 'Dollar',
+    price: 80, wholesalePrice: 60, compareAtPrice: 100, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 1900, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 60,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['permanent marker', 'black marker', 'bullet tip'],
+    desc: 'Fast drying waterproof Dollar permanent marker. Writes permanently on paper, cardboard, plastic, glass and metal.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tip': 'Bullet Tip 2mm', 'Ink': 'Waterproof Alcohol-based' }
+  },
+  {
+    id: 'lsm-079', name: 'Permanent Marker Blue', slug: 'permanent-marker-blue', sku: 'LSM-MKR-PMU-079',
+    category: 'Markers & Highlighters', subcategory: 'Permanent Markers', brand: 'Dollar',
+    price: 80, wholesalePrice: 60, compareAtPrice: 100, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 1400, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 38,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['permanent blue', 'shipping marker'],
+    desc: 'Deep royal blue indelible permanent marker with heavy ink capacity for parcel labeling and warehouse marking.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Color': 'Royal Blue', 'Tip': 'Bullet Tip' }
+  },
+  {
+    id: 'lsm-080', name: 'Permanent Marker Red', slug: 'permanent-marker-red', sku: 'LSM-MKR-PMR-080',
+    category: 'Markers & Highlighters', subcategory: 'Permanent Markers', brand: 'Dollar',
+    price: 80, wholesalePrice: 60, compareAtPrice: 100, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 1100, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 29,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['permanent red', 'danger mark', 'warning marker'],
+    desc: 'High-visibility red permanent marker for warning signs, carton marking and quality check inspections.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Color': 'Vivid Red', 'Refillable': 'Dollar Marker Refill Ink compatible' }
+  },
+  {
+    id: 'lsm-081', name: 'Whiteboard Marker Black', slug: 'whiteboard-marker-black', sku: 'LSM-MKR-WMB-081',
+    category: 'Markers & Highlighters', subcategory: 'Whiteboard Markers', brand: 'Dollar',
+    price: 90, wholesalePrice: 68, compareAtPrice: 115, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 2600, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 82,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['whiteboard marker', 'dry erase', 'dollar board marker', 'school marker'],
+    desc: 'Dry erase whiteboard marker with intense black pigment. Erases cleanly with dry cloth leaving no ghosting residue.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tip': 'Bullet Tip', 'Low Odor': 'Yes', 'Dry Wipe': 'Residue free' }
+  },
+  {
+    id: 'lsm-082', name: 'Whiteboard Marker Blue', slug: 'whiteboard-marker-blue', sku: 'LSM-MKR-WMU-082',
+    category: 'Markers & Highlighters', subcategory: 'Whiteboard Markers', brand: 'Dollar',
+    price: 90, wholesalePrice: 68, compareAtPrice: 115, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 2300, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 70,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['whiteboard blue', 'classroom teacher marker'],
+    desc: 'Vivid blue dry erase marker formulated for classrooms, lecture halls, and meeting room whiteboards.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Color': 'Bright Blue', 'Cap Off Time': 'Up to 24 hours' }
+  },
+  {
+    id: 'lsm-083', name: 'Whiteboard Marker Red', slug: 'whiteboard-marker-red', sku: 'LSM-MKR-WMR-083',
+    category: 'Markers & Highlighters', subcategory: 'Whiteboard Markers', brand: 'Dollar',
+    price: 90, wholesalePrice: 68, compareAtPrice: 115, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 36,
+    stock: 1500, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 44,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['whiteboard red', 'teacher marker'],
+    desc: 'Red dry-erase whiteboard marker for emphasizing points, diagrams, and correction in teaching sessions.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Color': 'Carmine Red', 'Tip': 'Durable fiber tip' }
+  },
+  {
+    id: 'lsm-084', name: 'CD/DVD Marker', slug: 'cd-dvd-marker', sku: 'LSM-MKR-CDD-084',
+    category: 'Markers & Highlighters', subcategory: 'Specialty Markers', brand: 'Piano',
+    price: 85, wholesalePrice: 62, compareAtPrice: 105, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 25,
+    stock: 650, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 20,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['cd marker', 'overhead projection', 'ohp marker'],
+    desc: 'Extra-fine non-solvent marker safe for writing on discs, overhead projector acetates, and delicate optical media.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tip': '0.7mm Fine', 'Solvent-free': 'Safe for disc surface' }
+  },
+  {
+    id: 'lsm-085', name: 'Fine Tip Marker Set', slug: 'fine-tip-marker-set', sku: 'LSM-MKR-FIN-085',
+    category: 'Markers & Highlighters', subcategory: 'Fine Markers', brand: 'Dollar',
+    price: 360, wholesalePrice: 285, compareAtPrice: 420, unit: 'Set', packSize: 'Set of 6 Colors', minWholesaleQty: 20,
+    stock: 740, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 31,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['fine markers', 'calligraphy markers', 'sketching set'],
+    desc: 'Set of 6 assorted color fine point markers for diagram coloring, mind mapping, and creative revision notes.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Count': '6 Vibrant Colors', 'Tip': '1.0mm Fine' }
+  },
+  {
+    id: 'lsm-086', name: 'Colored Marker Set', slug: 'colored-marker-set-12', sku: 'LSM-MKR-COL-086',
+    category: 'Markers & Highlighters', subcategory: 'Color Marker Sets', brand: 'Dux',
+    price: 260, wholesalePrice: 205, compareAtPrice: 320, unit: 'Set', packSize: 'Set of 12 Colors', minWholesaleQty: 25,
+    stock: 980, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 45,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['colored markers', '12 sketch markers', 'school art'],
+    desc: 'Washable 12-color fiber tip marker pack for school children. Water-based washable ink easily washes off clothes and skin.',
+    img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Colors': '12 Washable Shades', 'Safety': 'Non-toxic EN71 certified' }
+  }
+];

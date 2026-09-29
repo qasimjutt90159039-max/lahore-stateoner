@@ -1,0 +1,14 @@
+{
+  "storeName": "Lahore Stationers Mall",
+  "phone": "+92 323 4304600",
+  "address": "Kabeer Street, Urdu Bazar, Lahore 54000, Pakistan",
+  "email": "",
+  "businessHours": "Mon - Sat: 9:00 AM - 8:30 PM (Sunday Closed)",
+  "facebookUrl": "",
+  "instagramUrl": "",
+  "announcementText": "Wholesale Stationery • Kabeer Street, Urdu Bazar Lahore • Cash on Delivery & Bulk Quotations Available",
+  "minimumWholesaleOrderValue": 5000,
+  "defaultDeliveryFee": 200,
+  "freeDeliveryThreshold": 4000,
+  "priceNotice": "Prices and availability may change. Please confirm before final purchase."
+}

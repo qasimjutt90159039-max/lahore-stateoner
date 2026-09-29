@@ -1,0 +1,14 @@
+[
+  {
+    "id": "usr-admin-1",
+    "name": "Urdu Bazar Store Admin",
+    "email": "admin@lahorestationers.com",
+    "phone": "+92 323 4304600",
+    "role": "admin",
+    "companyName": "Lahore Stationers Mall",
+    "address": "Kabeer Street, Urdu Bazar",
+    "city": "Lahore",
+    "createdAt": "2026-09-29T20:57:04.951Z",
+    "passwordHash": "$2b$10$TKV67Q90ib6vVsB.POhZ2.DxCMlNSW5JtUA9veSIzuprTYGZ4gbV."
+  }
+]

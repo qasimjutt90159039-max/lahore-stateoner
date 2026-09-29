@@ -1,0 +1,335 @@
+export const productsPart4 = [
+  // 7. School Supplies (15 products: items 87-101)
+  {
+    id: 'lsm-087', name: 'School Geometry Box', slug: 'school-geometry-box', sku: 'LSM-SCH-GEO-087',
+    category: 'School Supplies', subcategory: 'Geometry Sets', brand: 'Dux',
+    price: 380, wholesalePrice: 300, compareAtPrice: 450, unit: 'Box', packSize: 'Single Box', minWholesaleQty: 20,
+    stock: 1400, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 78,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['geometry box', 'dux geometry', 'compass set', 'urdu bazar school'],
+    desc: 'Original Dux tin school geometry box containing die-cast compass, divider, 15cm ruler, 45 & 60 degree set squares, protractor, stencil and eraser.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tin Case': 'Embossed Metal', 'Instruments': '8 Precision Pieces', 'Brand': 'Dux' }
+  },
+  {
+    id: 'lsm-088', name: 'Student Geometry Set', slug: 'student-geometry-set', sku: 'LSM-SCH-STG-088',
+    category: 'School Supplies', subcategory: 'Geometry Sets', brand: 'Faber-Castell',
+    price: 650, wholesalePrice: 520, compareAtPrice: 780, unit: 'Box', packSize: 'Single Box', minWholesaleQty: 12,
+    stock: 620, stockStatus: 'in_stock' as const, rating: 5.0, reviewsCount: 49,
+    featured: true, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['faber geometry', 'precision compass', 'matric exam'],
+    desc: 'Faber-Castell math set with self-centering quick-adjust gear compass and anti-glare graduations.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Brand': 'Faber-Castell', 'Compass Type': 'Self-centering gear head' }
+  },
+  {
+    id: 'lsm-089', name: 'Plastic Ruler 15cm', slug: 'plastic-ruler-15cm', sku: 'LSM-SCH-R15-089',
+    category: 'School Supplies', subcategory: 'Rulers', brand: 'Dux',
+    price: 30, wholesalePrice: 20, compareAtPrice: 40, unit: 'Piece', packSize: 'Pack of 20', minWholesaleQty: 50,
+    stock: 3500, stockStatus: 'in_stock' as const, rating: 4.6, reviewsCount: 33,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['15cm ruler', 'pencil case ruler', 'scale'],
+    desc: 'Clear transparent 15cm (6 inch) student scale with bevelled edge and millimeters & inches markings.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Length': '15 cm / 6 in', 'Material': 'Shatter-resistant Acrylic' }
+  },
+  {
+    id: 'lsm-090', name: 'Plastic Ruler 30cm', slug: 'plastic-ruler-30cm', sku: 'LSM-SCH-R30-090',
+    category: 'School Supplies', subcategory: 'Rulers', brand: 'Dux',
+    price: 60, wholesalePrice: 42, compareAtPrice: 80, unit: 'Piece', packSize: 'Pack of 20', minWholesaleQty: 40,
+    stock: 2800, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 46,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['30cm ruler', 'foot scale', 'transparent scale'],
+    desc: 'Full 30cm (12 inch) acrylic ruler with easy-to-read scratch resistant metric and imperial calibrations.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Length': '30 cm / 12 in', 'Graduation': 'Millimeters & Tenths' }
+  },
+  {
+    id: 'lsm-091', name: 'Steel Ruler 30cm', slug: 'steel-ruler-30cm', sku: 'LSM-SCH-SR30-091',
+    category: 'School Supplies', subcategory: 'Rulers', brand: 'Generic',
+    price: 150, wholesalePrice: 110, compareAtPrice: 190, unit: 'Piece', packSize: 'Pack of 10', minWholesaleQty: 25,
+    stock: 920, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 38,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['steel scale', 'metal ruler', 'cutter ruler'],
+    desc: 'Stainless steel 30cm ruler with etched conversions table on reverse side. Safe edge for paper cutting with craft knives.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Material': 'Hardened Stainless Steel', 'Reverse Table': 'Inch to mm conversion' }
+  },
+  {
+    id: 'lsm-092', name: 'Pencil Sharpener', slug: 'pencil-sharpener', sku: 'LSM-SCH-SHP-092',
+    category: 'School Supplies', subcategory: 'Sharpeners', brand: 'Dux',
+    price: 25, wholesalePrice: 16, compareAtPrice: 35, unit: 'Piece', packSize: 'Tub of 40', minWholesaleQty: 80,
+    stock: 4500, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 52,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['dux sharpener', 'single hole sharpener', 'school essential'],
+    desc: 'Classic plastic Dux pencil sharpener with carbon steel blade providing conical razor-sharp pencil points without breaking wood.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Blade': 'High Carbon German Steel', 'Body': 'Plastic contoured' }
+  },
+  {
+    id: 'lsm-093', name: 'Double Hole Sharpener', slug: 'double-hole-sharpener', sku: 'LSM-SCH-DSH-093',
+    category: 'School Supplies', subcategory: 'Sharpeners', brand: 'Dux',
+    price: 60, wholesalePrice: 42, compareAtPrice: 80, unit: 'Piece', packSize: 'Pack of 20', minWholesaleQty: 40,
+    stock: 1600, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 30,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['double sharpener', 'jumbo pencil sharpener'],
+    desc: 'Dual-diameter sharpener for standard 8mm and jumbo 11mm triangular and hexagonal pencils, equipped with shaving container.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Holes': 'Standard 8mm & Jumbo 11mm', 'Waste Container': 'Translucent Canister' }
+  },
+  {
+    id: 'lsm-094', name: 'Eraser Pack', slug: 'eraser-pack', sku: 'LSM-SCH-ERS-094',
+    category: 'School Supplies', subcategory: 'Erasers', brand: 'Dux',
+    price: 150, wholesalePrice: 110, compareAtPrice: 190, unit: 'Pack', packSize: 'Pack of 10 Erasers', minWholesaleQty: 30,
+    stock: 2200, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 49,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['eraser pack', 'dust free eraser', 'dux rubber'],
+    desc: 'Dust-free non-abrasive soft white pencil erasers. Residue rolls together in clean strings without tearing paper fiber.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Quantity': '10 Erasers in Pack', 'Type': 'Dust-Free Non-toxic' }
+  },
+  {
+    id: 'lsm-095', name: 'Pencil Box', slug: 'pencil-box', sku: 'LSM-SCH-PBX-095',
+    category: 'School Supplies', subcategory: 'Pencil Cases', brand: 'Generic',
+    price: 280, wholesalePrice: 210, compareAtPrice: 350, unit: 'Piece', packSize: 'Single Box', minWholesaleQty: 24,
+    stock: 780, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 39,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['pencil box', 'magnetic case', 'school geometry pouch'],
+    desc: 'Magnetic double-sided kids pencil case with built-in dual sharpeners and separate compartments for pens, pencils, and erasers.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Features': 'Dual Magnetic Lids + Pop-up Sharpener', 'Material': 'BPA-free plastic' }
+  },
+  {
+    id: 'lsm-096', name: 'School Scissors', slug: 'school-scissors', sku: 'LSM-SCH-SCS-096',
+    category: 'School Supplies', subcategory: 'Scissors', brand: 'Generic',
+    price: 120, wholesalePrice: 88, compareAtPrice: 160, unit: 'Piece', packSize: 'Pack of 12', minWholesaleQty: 24,
+    stock: 940, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 27,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['safety scissors', 'school scissors', 'blunt tip'],
+    desc: 'Safety rounded-tip scissors with soft ergonomic finger rings. Safe for kindergarten and primary school art craft activities.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Length': '13 cm (5 inch)', 'Tip': 'Blunt safety rounded' }
+  },
+  {
+    id: 'lsm-097', name: 'Glue Stick', slug: 'glue-stick-school', sku: 'LSM-SCH-GLS-097',
+    category: 'School Supplies', subcategory: 'Adhesives', brand: 'UHU',
+    price: 180, wholesalePrice: 145, compareAtPrice: 220, unit: 'Piece', packSize: 'Box of 12', minWholesaleQty: 24,
+    stock: 1800, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 65,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['uhu stick', 'school glue stick', '21g glue'],
+    desc: 'Original UHU Stic 21g solvent-free glue stick. Glides smoothly, sticks fast, and is completely washable with cold water.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Weight': '21 Grams', 'Solvent-Free': 'Yes', 'Origin': 'Germany' }
+  },
+  {
+    id: 'lsm-098', name: 'School Glue', slug: 'school-glue-liquid', sku: 'LSM-SCH-GLU-098',
+    category: 'School Supplies', subcategory: 'Adhesives', brand: 'Dollar',
+    price: 110, wholesalePrice: 82, compareAtPrice: 140, unit: 'Bottle', packSize: 'Pack of 12', minWholesaleQty: 24,
+    stock: 1200, stockStatus: 'in_stock' as const, rating: 4.6, reviewsCount: 31,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['liquid glue', 'dollar white glue', 'paper glue'],
+    desc: '100ml squeezable bottle of non-toxic white liquid school glue with twist-applicator cap for precise craft work.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Volume': '100 ml', 'Nozzle': 'Twist-flow control' }
+  },
+  {
+    id: 'lsm-099', name: 'Lunch Box', slug: 'school-lunch-box', sku: 'LSM-SCH-LNB-099',
+    category: 'School Supplies', subcategory: 'Student Accessories', brand: 'Generic',
+    price: 490, wholesalePrice: 380, compareAtPrice: 620, unit: 'Piece', packSize: 'Single Piece', minWholesaleQty: 15,
+    stock: 450, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 36,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['lunch box', 'student tiffin', 'leakproof'],
+    desc: 'Food-grade BPA-free partitioned kids lunch box with silicone airtight seal ring and folding spoon-fork set.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Material': 'Food Grade PP BPA-Free', 'Compartments': '3 Sections' }
+  },
+  {
+    id: 'lsm-100', name: 'School Water Bottle', slug: 'school-water-bottle', sku: 'LSM-SCH-WBT-100',
+    category: 'School Supplies', subcategory: 'Student Accessories', brand: 'Generic',
+    price: 420, wholesalePrice: 320, compareAtPrice: 550, unit: 'Piece', packSize: 'Single Piece', minWholesaleQty: 15,
+    stock: 510, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 41,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['water bottle', 'school sipper', 'unbreakable'],
+    desc: 'Durable 600ml leak-proof flip-straw water bottle with carrying lanyard. Keeps drinking water fresh and hygienic.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Capacity': '600 ml', 'Straw': 'Food grade silicone' }
+  },
+  {
+    id: 'lsm-101', name: 'School Name Labels', slug: 'school-name-labels', sku: 'LSM-SCH-NML-101',
+    category: 'School Supplies', subcategory: 'Labels', brand: 'Generic',
+    price: 60, wholesalePrice: 40, compareAtPrice: 80, unit: 'Pack', packSize: 'Pack of 3 Sheets (36 Labels)', minWholesaleQty: 50,
+    stock: 2400, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 50,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['name slips', 'book sticker', 'name tags'],
+    desc: 'Self-adhesive glossy school name slips with fields for Student Name, Class, Section, Roll No, and School.',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Count': '36 Stickers Total', 'Adhesive': 'Strong self-adhesive peel & stick' }
+  },
+
+  // 8. Art & Craft (15 products: items 102-116)
+  {
+    id: 'lsm-102', name: 'Poster Color Set', slug: 'poster-color-set', sku: 'LSM-ART-PST-102',
+    category: 'Art & Craft', subcategory: 'Paints', brand: 'Dollar',
+    price: 480, wholesalePrice: 380, compareAtPrice: 580, unit: 'Set', packSize: 'Set of 6 Bottles', minWholesaleQty: 15,
+    stock: 650, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 39,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['poster colors', 'dollar poster colors', 'opaque paints'],
+    desc: 'Opaque velvety matte finish poster colors in 6 glass jars. High covering power and mixability for school poster competitions.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Bottles': '6 Jars (15ml each)', 'Finish': 'Matte Opaque' }
+  },
+  {
+    id: 'lsm-103', name: 'Water Color Set', slug: 'water-color-set', sku: 'LSM-ART-WTC-103',
+    category: 'Art & Craft', subcategory: 'Paints', brand: 'Pelikan Style',
+    price: 350, wholesalePrice: 275, compareAtPrice: 420, unit: 'Set', packSize: '12 Paint Cakes with Brush', minWholesaleQty: 20,
+    stock: 820, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 31,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['water colors', 'paint cakes', 'art brush'],
+    desc: '12 vibrant semi-moist watercolor pans in a portable plastic palette box with integrated mixing wells and camel hair brush.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Colors': '12 Color Cakes', 'Brush Included': 'Yes' }
+  },
+  {
+    id: 'lsm-104', name: 'Acrylic Color Set', slug: 'acrylic-color-set', sku: 'LSM-ART-ACR-104',
+    category: 'Art & Craft', subcategory: 'Paints', brand: 'Keep Smiling',
+    price: 850, wholesalePrice: 680, compareAtPrice: 1050, unit: 'Set', packSize: '12 Tubes Set (12ml)', minWholesaleQty: 10,
+    stock: 490, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 52,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['acrylic paints', 'canvas painting', 'artist paints'],
+    desc: 'Heavy body 12-tube acrylic paint set. Permanent, flexible, and waterproof once dry. Works on canvas, wood, paper and clay.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Tubes': '12 Tubes x 12ml', 'Medium': 'Acrylic emulsion' }
+  },
+  {
+    id: 'lsm-105', name: 'Oil Pastel Set', slug: 'oil-pastel-set', sku: 'LSM-ART-OPS-105',
+    category: 'Art & Craft', subcategory: 'Pastels', brand: 'Pentel',
+    price: 490, wholesalePrice: 390, compareAtPrice: 590, unit: 'Set', packSize: '25 Colors Box', minWholesaleQty: 15,
+    stock: 580, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 44,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['oil pastels', 'pentel pastels', 'blending colors'],
+    desc: 'Soft, creamy Pentel oil pastels with high pigment load. Blends effortlessly using paper stumps or fingers for rich painterly effects.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Count': '25 Brilliant Sticks', 'Formula': 'Acid-free oil wax' }
+  },
+  {
+    id: 'lsm-106', name: 'Soft Pastel Set', slug: 'soft-pastel-set', sku: 'LSM-ART-SFP-106',
+    category: 'Art & Craft', subcategory: 'Pastels', brand: 'Faber-Castell',
+    price: 920, wholesalePrice: 750, compareAtPrice: 1100, unit: 'Set', packSize: '24 Half Sticks', minWholesaleQty: 8,
+    stock: 260, stockStatus: 'in_stock' as const, rating: 4.9, reviewsCount: 30,
+    featured: false, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['soft pastels', 'chalk pastels', 'artist pastels'],
+    desc: 'Chalk-based soft pastels offering intense luminous colors and velvet matte finish. Easy to smudge and fix on pastel paper.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Sticks': '24 Half Lengths', 'Origin': 'Faber-Castell Art' }
+  },
+  {
+    id: 'lsm-107', name: 'Crayon Set', slug: 'crayon-set', sku: 'LSM-ART-CRY-107',
+    category: 'Art & Craft', subcategory: 'Crayons', brand: 'Dux',
+    price: 140, wholesalePrice: 105, compareAtPrice: 175, unit: 'Box', packSize: '12 Wax Crayons Box', minWholesaleQty: 30,
+    stock: 1400, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 28,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['crayons', 'wax crayons', 'toddler coloring'],
+    desc: 'Non-toxic break-resistant wax crayons in 12 cheerful colors wrapped in paper jackets to keep hands clean.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Colors': '12 Wax Colors', 'Safety': 'Non-toxic conforms to ASTM D-4236' }
+  },
+  {
+    id: 'lsm-108', name: 'Colored Marker Set', slug: 'colored-marker-set-art', sku: 'LSM-ART-MKR-108',
+    category: 'Art & Craft', subcategory: 'Drawing Pens', brand: 'Touch Tech',
+    price: 1650, wholesalePrice: 1350, compareAtPrice: 1950, unit: 'Set', packSize: '24 Dual Markers with Pouch', minWholesaleQty: 6,
+    stock: 320, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 57,
+    featured: true, bestSeller: false, newArrival: true, wholesaleAvailable: true,
+    tags: ['touch markers', 'dual tip', 'alcohol markers', 'manga'],
+    desc: 'Dual-tip alcohol art markers with broad chisel tip and fine bullet tip. Quick drying, blendable ink in zipped canvas storage bag.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Count': '24 Dual Tip Markers', 'Carry Bag': 'Zipped Fabric Pouch' }
+  },
+  {
+    id: 'lsm-109', name: 'Paint Brush Set', slug: 'paint-brush-set', sku: 'LSM-ART-BRS-109',
+    category: 'Art & Craft', subcategory: 'Brushes', brand: 'Keep Smiling',
+    price: 390, wholesalePrice: 300, compareAtPrice: 480, unit: 'Set', packSize: 'Set of 6 Brushes', minWholesaleQty: 20,
+    stock: 750, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 36,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['paint brushes', 'artist brush set', 'round and flat'],
+    desc: 'Assorted set of 6 synthetic nylon hair paint brushes (Round #2, 4, 8 and Flat #4, 8, 12) with nickel-plated ferrules.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Hair': 'Golden Nylon Synthetic', 'Pieces': '6 Assorted Sizes' }
+  },
+  {
+    id: 'lsm-110', name: 'Drawing Charcoal Set', slug: 'drawing-charcoal-set', sku: 'LSM-ART-CHR-110',
+    category: 'Art & Craft', subcategory: 'Sketching', brand: 'Generic',
+    price: 320, wholesalePrice: 245, compareAtPrice: 390, unit: 'Box', packSize: 'Box of 10 Willow Sticks', minWholesaleQty: 15,
+    stock: 410, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 22,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['charcoal sticks', 'willow charcoal', 'life drawing'],
+    desc: 'Natural willow vine charcoal sticks for expressive life drawing, rapid shading, and portrait sketching.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Type': 'Natural Willow Charcoal', 'Sticks': '10 Assorted Diameters' }
+  },
+  {
+    id: 'lsm-111', name: 'Sketching Kit', slug: 'sketching-kit', sku: 'LSM-ART-KIT-111',
+    category: 'Art & Craft', subcategory: 'Sets', brand: 'Keep Smiling',
+    price: 1250, wholesalePrice: 990, compareAtPrice: 1500, unit: 'Kit', packSize: 'Full Zipper Case Kit', minWholesaleQty: 8,
+    stock: 280, stockStatus: 'in_stock' as const, rating: 5.0, reviewsCount: 46,
+    featured: true, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['sketching kit', 'all in one art set', 'kneaded eraser'],
+    desc: 'Complete drawing kit including 12 graphite pencils, blending paper stumps, kneaded eraser, craft cutter and sandpaper block in zip case.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Items': '18 Art Tools & Pencils', 'Case': 'Black Zip Case' }
+  },
+  {
+    id: 'lsm-112', name: 'Canvas Board', slug: 'canvas-board-10x12', sku: 'LSM-ART-CNV-112',
+    category: 'Art & Craft', subcategory: 'Canvas', brand: 'LSM Master',
+    price: 240, wholesalePrice: 180, compareAtPrice: 290, unit: 'Piece', packSize: 'Pack of 5', minWholesaleQty: 15,
+    stock: 890, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 40,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['canvas board', '10x12 canvas', 'painting board'],
+    desc: 'Triple gesso primed 100% cotton canvas mounted onto rigid acid-free MDF hardboard. Ready for immediate oil and acrylic painting.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Size': '10 x 12 inches (25x30cm)', 'Surface': 'Triple Gesso Primed Cotton' }
+  },
+  {
+    id: 'lsm-113', name: 'Craft Foam Sheets', slug: 'craft-foam-sheets', sku: 'LSM-ART-FMS-113',
+    category: 'Art & Craft', subcategory: 'Craft Sheets', brand: 'Generic',
+    price: 290, wholesalePrice: 220, compareAtPrice: 360, unit: 'Pack', packSize: 'Pack of 10 EVA Sheets', minWholesaleQty: 20,
+    stock: 670, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 25,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['eva foam', 'foam sheets', 'kids crafts'],
+    desc: '2mm flexible EVA colorful foam sheets. Easy to cut, fold, punch and glue for classroom models and decorative masks.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Thickness': '2mm', 'Count': '10 Rainbow Colors', 'Size': 'A4' }
+  },
+  {
+    id: 'lsm-114', name: 'Glitter Sheets', slug: 'glitter-sheets', sku: 'LSM-ART-GLT-114',
+    category: 'Art & Craft', subcategory: 'Craft Sheets', brand: 'Generic',
+    price: 380, wholesalePrice: 290, compareAtPrice: 460, unit: 'Pack', packSize: 'Pack of 10 Sheets', minWholesaleQty: 20,
+    stock: 590, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 33,
+    featured: false, bestSeller: true, newArrival: false, wholesaleAvailable: true,
+    tags: ['glitter foam', 'sparkle sheet', 'self adhesive glitter'],
+    desc: 'Self-adhesive sparkling glitter EVA foam sheets. Non-shedding glitter layer adds instant sparkle to cards and banners.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Adhesive': 'Self-Adhesive Backing', 'Count': '10 Assorted Colors' }
+  },
+  {
+    id: 'lsm-115', name: 'Colored Craft Paper', slug: 'colored-craft-paper-origami', sku: 'LSM-ART-CRF-115',
+    category: 'Art & Craft', subcategory: 'Paper Crafts', brand: 'Generic',
+    price: 250, wholesalePrice: 190, compareAtPrice: 320, unit: 'Pack', packSize: '100 Sheets Pack', minWholesaleQty: 25,
+    stock: 780, stockStatus: 'in_stock' as const, rating: 4.7, reviewsCount: 29,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['origami paper', 'craft paper', 'square folding paper'],
+    desc: 'Square 15x15cm double-sided vibrant origami folding paper pack for cranes, flowers, and geometric paper folding.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Size': '15 x 15 cm Square', 'Count': '100 Sheets 10 Colors' }
+  },
+  {
+    id: 'lsm-116', name: 'Modeling Clay Set', slug: 'modeling-clay-set', sku: 'LSM-ART-CLY-116',
+    category: 'Art & Craft', subcategory: 'Clay', brand: 'Dux',
+    price: 260, wholesalePrice: 195, compareAtPrice: 320, unit: 'Set', packSize: '12 Colors Set with Cutters', minWholesaleQty: 20,
+    stock: 820, stockStatus: 'in_stock' as const, rating: 4.8, reviewsCount: 37,
+    featured: false, bestSeller: false, newArrival: false, wholesaleAvailable: true,
+    tags: ['clay set', 'play dough', 'sculpting clay'],
+    desc: 'Soft non-drying plasticine modeling clay in 12 colors with 3 sculpting cutter tools. Encourages fine motor skills.',
+    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80',
+    specs: { 'Features': 'Non-drying reusable plasticine', 'Tools': '3 Modeling spatulas included' }
+  }
+];

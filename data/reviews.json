@@ -1,0 +1,20 @@
+[
+  {
+    "id": "rev-001",
+    "productId": "lsm-001",
+    "userName": "Hamza Khan",
+    "rating": 5,
+    "comment": "Genuine Dollar pens received in pristine packaging. Best price in Urdu Bazar.",
+    "verifiedPurchase": true,
+    "createdAt": "2026-09-24T20:57:04.954Z"
+  },
+  {
+    "id": "rev-002",
+    "productId": "lsm-048",
+    "userName": "Zubair Printing Press",
+    "rating": 5,
+    "comment": "High quality copy paper with zero jam on heavy office laser copier. Will order in cartons next time.",
+    "verifiedPurchase": true,
+    "createdAt": "2026-09-25T20:57:04.954Z"
+  }
+]

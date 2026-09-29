@@ -5,34 +5,48 @@ import { Product, Category, User, Order, WholesaleRequest, Review, AdminSettings
 import { getAllSeedProducts } from './data/allProducts.js';
 import { initialCategories } from './data/categoriesData.js';
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const isVercel = process.env.VERCEL === '1' || Boolean(process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = isVercel
+  ? path.resolve('/tmp', 'lsm-data')
+  : path.resolve(process.cwd(), 'data');
 
 function ensureDataDir() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+  } catch (err) {
+    // Silently continue with in-memory storage if filesystem is read-only
   }
 }
 
 function readJSON<T>(filename: string, defaultValue: T): T {
-  ensureDataDir();
-  const filePath = path.join(DATA_DIR, filename);
-  if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, JSON.stringify(defaultValue, null, 2), 'utf-8');
-    return defaultValue;
-  }
   try {
+    ensureDataDir();
+    const filePath = path.join(DATA_DIR, filename);
+    if (!fs.existsSync(filePath)) {
+      try {
+        fs.writeFileSync(filePath, JSON.stringify(defaultValue, null, 2), 'utf-8');
+      } catch {
+        // Disk write failed, fallback in-memory
+      }
+      return defaultValue;
+    }
     const raw = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(raw);
-  } catch (err) {
-    console.error(`Error reading ${filename}:`, err);
+  } catch {
     return defaultValue;
   }
 }
 
 function writeJSON<T>(filename: string, data: T): void {
-  ensureDataDir();
-  const filePath = path.join(DATA_DIR, filename);
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+  try {
+    ensureDataDir();
+    const filePath = path.join(DATA_DIR, filename);
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+  } catch {
+    // Disk write failed, in-memory array already holds state
+  }
 }
 
 export interface UserRecord extends User {

@@ -1,0 +1,103 @@
+import { Category } from '../types/index.js';
+
+export const initialCategories: Category[] = [
+  {
+    id: 'cat-1',
+    name: 'Pens & Writing',
+    slug: 'writing',
+    description: 'Ball pens, gel pens, rollerballs, fountain pens & student multipacks from top brands.',
+    iconName: 'PenTool',
+    productCount: 20,
+    bannerImage: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-2',
+    name: 'Pencils',
+    slug: 'pencils',
+    description: 'HB, 2B graphite drawing pencils, mechanical pencils, lead refills & colored pencils.',
+    iconName: 'Pencil',
+    productCount: 12,
+    bannerImage: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-3',
+    name: 'Notebooks & Registers',
+    slug: 'notebooks',
+    description: 'A4 & A5 single line, double line, hard cover, spiral journals and office registers.',
+    iconName: 'BookOpen',
+    productCount: 15,
+    bannerImage: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-4',
+    name: 'Paper Products',
+    slug: 'paper',
+    description: 'A4 copy paper 70/80 GSM, card sheets, legal paper, photo paper & carbon tracing sheets.',
+    iconName: 'FileText',
+    productCount: 12,
+    bannerImage: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-5',
+    name: 'Files & Folders',
+    slug: 'files-folders',
+    description: 'Box files, ring binders, lever arch files, clear display books & document wallets.',
+    iconName: 'FolderArchive',
+    productCount: 15,
+    bannerImage: 'https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-6',
+    name: 'Markers & Highlighters',
+    slug: 'markers',
+    description: 'Permanent markers, whiteboard erasable markers, neon textliners & CD markers.',
+    iconName: 'Highlighter',
+    productCount: 12,
+    bannerImage: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-7',
+    name: 'School Supplies',
+    slug: 'school-supplies',
+    description: 'Geometry boxes, sharpeners, erasers, scissors, lunch sets, bottles & name labels.',
+    iconName: 'GraduationCap',
+    productCount: 15,
+    bannerImage: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-8',
+    name: 'Art & Craft',
+    slug: 'art-craft',
+    description: 'Poster paints, watercolors, acrylic sets, pastels, sketch books, canvas & glitter foam.',
+    iconName: 'Palette',
+    productCount: 15,
+    bannerImage: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-9',
+    name: 'Office & Desk Accessories',
+    slug: 'office-supplies',
+    description: 'Calculators, heavy staplers, binder clips, sticky notes, pen stands & organizers.',
+    iconName: 'Briefcase',
+    productCount: 15,
+    bannerImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-10',
+    name: 'Adhesives & Packaging',
+    slug: 'packaging',
+    description: 'UHU tubes, super glues, glue sticks, packaging tapes, dispensers & bubble wrap.',
+    iconName: 'Package',
+    productCount: 10,
+    bannerImage: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'cat-11',
+    name: 'Wholesale Packs',
+    slug: 'wholesale-packs',
+    description: 'Bulk master cartons, school starter kits & wholesale filing sets for retailers.',
+    iconName: 'Boxes',
+    productCount: 10,
+    bannerImage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80'
+  }
+];
